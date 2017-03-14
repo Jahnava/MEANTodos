@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,8 @@
   },
   "homepage": "https://github.com/Jahnava/MEANtodos#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongoose":"",
-    "body-parser":"",
+    "mongoose": "^4.9.0"
   }
 }
