@@ -7,6 +7,10 @@ var todoRouter = require('./routers/todo.router');
 var port = process.env.PORT || 8080;
 var mongoURI = process.env.MONGOURI || require('./secrets').mongoURI;
 
+server.get('/', function(request, response){
+  response.sendFile('index.html', {root: __dirname + '/public/html'});
+});
+
 
 //powerup -- middleware
 server.use(bodyParser.json());
