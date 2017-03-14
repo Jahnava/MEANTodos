@@ -5,7 +5,7 @@ var todoSchema = mongoose.Schema({
    ListItemOne: String,
    ListItemTwo: String,
    ListItemThree: String,
-  ListItemFour: Number
+   ListItemFour: Number
 });
 
 // Mongoose Model

@@ -17,8 +17,9 @@
     "url": "https://github.com/Jahnava/MEANtodos/issues"
   },
   "homepage": "https://github.com/Jahnava/MEANtodos#readme",
-  "mongoose"
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongoose":"",
+    "body-parser":"",
   }
 }
