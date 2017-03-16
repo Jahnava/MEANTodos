@@ -7,6 +7,8 @@ var todoRouter = require('./routers/todo.router');
 var port = process.env.PORT || 8080;
 var mongoURI = process.env.MONGOURI || require('./secrets').mongoURI;
 
+server.use(express.static( __dirname + '/public'));
+
 server.get('/', function(request, response){
   response.sendFile('index.html', {root: __dirname + '/public/html'});
 });
