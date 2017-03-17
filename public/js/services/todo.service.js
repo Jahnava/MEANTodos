@@ -9,10 +9,7 @@
 
     function getAll(){
       return $http.get(baseURL)
-                  // .then(function(response){
-                  //   console.log(response.data);
-                  // }); //dont need
-    // }
+    
 }
       return {
         getAll: getAll

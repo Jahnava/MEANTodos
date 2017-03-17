@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-
-
 // Mongoose Schema
 var todoSchema = mongoose.Schema({
    ListItemOne: String,
@@ -9,6 +7,14 @@ var todoSchema = mongoose.Schema({
    ListItemThree: String,
    ListItemFour: Number
 });
+
+completed:{
+
+}
+
+description: {
+
+}
 
 // Mongoose Model
 var Todo =mongoose.model('Todo', todoSchema);
