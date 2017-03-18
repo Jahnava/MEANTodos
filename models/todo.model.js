@@ -1,20 +1,23 @@
 var mongoose = require('mongoose');
 
 // Mongoose Schema
+// var todoSchema = mongoose.Schema({
+//    ListItemOne: String,
+//    ListItemTwo: String,
+//    ListItemThree: String,
+//    ListItemFour: Number
+// });
+
 var todoSchema = mongoose.Schema({
-   ListItemOne: String,
-   ListItemTwo: String,
-   ListItemThree: String,
-   ListItemFour: Number
+  completed: {
+    type: Boolean,
+    default: false
+  },
+  description: {
+    type: String,
+    required: true,
+  }
 });
-
-completed:{
-
-}
-
-description: {
-
-}
 
 // Mongoose Model
 var Todo =mongoose.model('Todo', todoSchema);
