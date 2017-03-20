@@ -1,5 +1,5 @@
-// immediately invoked functional expression
-(function(){
-  angular.module("MEANTodos", []); //setter syntax
 
-})()
+(function(){
+  angular.module('MEANTodos', []); //setter syntax
+
+})() //immediately invoked functional expression
