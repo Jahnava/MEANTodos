@@ -23,16 +23,16 @@
     console.log('updating...');
     todo.edit = false;
     TodoService.update(todo)
-                .then(function(respod){
+                .then(function(response){
                   getTodos();
                 });
   }
 
         function deleteTodo(todo){
-  TodoService.delete(todo)
-                  .then(function(response){
-                    getTodos();
-                  });
+  			TodoService.delete(todo)
+						.then(function(response){
+                    		getTodos();
+                  			});
         }
 
   function addTodo(newTodo){
