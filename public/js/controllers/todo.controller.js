@@ -21,6 +21,8 @@
         $scope.todos = TodoService.fetch();
       });
 
+
+
       function edit(todo){
         console.log('editing...');
         todo.edit = true;
