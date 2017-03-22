@@ -35,15 +35,14 @@ todoRouter.get('/todos/:id', function(req, res){
 todoRouter.post('/todos', function(req, res){
   var todo = new Todo(req.body);
 console.log(todo);
-  res.send('it works'); //used these to check git to make sure its logged
 todo.save(function(err, document){
   if(err){
-    res.status(500).json({
+    res.status(500).json({ 
       msg:err
     });
   }else{
-      res.status(200).json({
-  msg: 'Success'
+      res.status(201).json({
+  msg: 'Successfully created'
 });
 }
 });

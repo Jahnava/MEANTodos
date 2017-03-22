@@ -1,13 +1,5 @@
 var mongoose = require('mongoose');
 
-// Mongoose Schema
-// var todoSchema = mongoose.Schema({
-//    ListItemOne: String,
-//    ListItemTwo: String,
-//    ListItemThree: String,
-//    ListItemFour: Number
-// });
-
 var todoSchema = mongoose.Schema({
   completed: {
     type: Boolean,
@@ -22,6 +14,15 @@ var todoSchema = mongoose.Schema({
 // Mongoose Model
 var Todo =mongoose.model('Todo', todoSchema);
 module.exports = Todo;
+
+
+// Mongoose Schema
+// var todoSchema = mongoose.Schema({
+//    ListItemOne: String,
+//    ListItemTwo: String,
+//    ListItemThree: String,
+//    ListItemFour: Number
+// });
 
 // Testing database
 // var listItem = new Todo({

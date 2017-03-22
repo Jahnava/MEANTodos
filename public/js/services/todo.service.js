@@ -3,7 +3,7 @@
 
     .factory('TodoService', TodoService);
 
-    TodoService.$inject = ['$http']; //$http == axios
+    TodoService.$inject = ['$http'];
 
     function TodoService($http){
       var baseURL = '/todos';
@@ -40,8 +40,6 @@
         getAll: getAll,
         create: create,
         delete: deleteTodo,
-
-
         update: update,
         fetch: fetch
       };
